@@ -65,6 +65,29 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_phone",
+						"type": "string"
+					}
+				],
+				"name": "updateContact",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
@@ -114,11 +137,11 @@
 	},
 	"sources": {
 		"Contact.sol": {
-			"keccak256": "0x8cfca6f55a65d20ecaf5b4aa30a24d7acac29f0b51b8ae36b2d09377c2a694d0",
+			"keccak256": "0xb56db3372c603f5311cab5c17c03f12c1d65c01bb75e7135ee6e317c863a5e43",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d283b4c142b1fed327e0c3af787b1a541777b9910a522c0c674f0dde61504996",
-				"dweb:/ipfs/Qmchf6RKwq7HP1S8LbXMYWskTYB2atEaZMZhQcU32s7Vzd"
+				"bzz-raw://ee8ec50fc94b4172b66a61e84997091ec7aa9fe0f5526a2834b904f5258fa88f",
+				"dweb:/ipfs/QmTvqMHBApQN27jN1jmPS8AMyDmU7DHDdMf7NhFFCj4xsZ"
 			]
 		}
 	},

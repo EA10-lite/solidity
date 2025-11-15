@@ -13,7 +13,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "deleteStudent",
+				"name": "deleteStudentById",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -102,7 +102,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "modifyStudentData",
+				"name": "registerStudent",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -125,7 +125,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "registerStudent",
+				"name": "updateStudent",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -159,11 +159,11 @@
 	},
 	"sources": {
 		"StudentRegistry.sol": {
-			"keccak256": "0x0fedcfa2a2fa87072393c3d582a038038802e4cbe6dce83fc10e943cdf5e3fb2",
+			"keccak256": "0x593ae3554ad87c5c4d83f40f2731c349f8e8d3698ce8829e0bf1cd802672f926",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d4bf1ba543e2772d9e2484a88bbd38d71ee792244266539e2ca04a426c6b9b2b",
-				"dweb:/ipfs/QmRpAxL2hVBf7Zt1qP1HsYk9sBTLU76BU43rx8sgwWFKmU"
+				"bzz-raw://5980d613d49456bf93279d4d0767d1393e72b4712688f72bd2a1d0ef33ef13be",
+				"dweb:/ipfs/QmY23fyHpAxhHZEKZB35g65FoVbDmwjfsxZZYjTeJWTJub"
 			]
 		}
 	},

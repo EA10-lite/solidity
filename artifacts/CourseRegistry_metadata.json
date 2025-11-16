@@ -1,0 +1,256 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_code",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_units",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "compulsory",
+						"type": "bool"
+					}
+				],
+				"name": "addCourse",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "courseRegistrations",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "courses",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "code",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "units",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isCompulsory",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "createStudentRegistry",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllCourses",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "code",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "units",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isCompulsory",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct CourseRegistry.Course[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_code",
+						"type": "string"
+					}
+				],
+				"name": "getCourseByCode",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "code",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "units",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isCompulsory",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct CourseRegistry.Course",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getStudentsForRegisteredCourse",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listOfStudentRegistryContracts",
+				"outputs": [
+					{
+						"internalType": "contract StudentRegistry",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "registerForCourse",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CourseRegistry.sol": "CourseRegistry"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CourseRegistry.sol": {
+			"keccak256": "0xd5a1cf719fccd42a8d9d80d8e53fc5c79977c3fe0be7c559155cab6adb6949fe",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5e29a6a02105ea4f5bd92b3652b899b8b2fa2d41398fff5abbe700091a8b69bb",
+				"dweb:/ipfs/QmRrv8AwBwjpqi1n6bYTqQRa14Eczbjh4YoZWvkGyEKmUb"
+			]
+		},
+		"StudentRegistry.sol": {
+			"keccak256": "0x593ae3554ad87c5c4d83f40f2731c349f8e8d3698ce8829e0bf1cd802672f926",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5980d613d49456bf93279d4d0767d1393e72b4712688f72bd2a1d0ef33ef13be",
+				"dweb:/ipfs/QmY23fyHpAxhHZEKZB35g65FoVbDmwjfsxZZYjTeJWTJub"
+			]
+		}
+	},
+	"version": 1
+}

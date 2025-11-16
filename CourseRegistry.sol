@@ -4,6 +4,8 @@ pragma solidity ^0.8.19;
 import { StudentRegistry } from "./StudentRegistry.sol";
 
 contract CourseRegistry {
+    StudentRegistry[] public listOfStudentRegistryContracts;
+
     struct Course {
         string code;
         string title;
@@ -13,6 +15,11 @@ contract CourseRegistry {
 
     Course[] public courses;
     mapping(uint => address[]) public courseRegistrations;
+
+    function createStudentRegistry() public {
+        StudentRegistry newStudentRegistry = new StudentRegistry();
+        listOfStudentRegistryContracts.push(newStudentRegistry);
+    }
 
 
     function addCourse(
@@ -34,10 +41,17 @@ contract CourseRegistry {
 
 
     function getCourseByCode(string memory _code) public view returns (Course memory) {
-        
+        for (uint i = 0; i < courses.length; i++) {
+            if(compareStrings(courses[i].code, _code)) {
+                return courses[i];
+            }
+        }
+
+        revert("Course not found!");
     }
 
-    function registerForCourse() public {}
+    function registerForCourse() public {
+    }
 
     function getStudentsForRegisteredCourse() public {}
 
